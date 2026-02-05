@@ -23,9 +23,9 @@ A simple authentication application built with **Next.js**, **Tailwind CSS**, an
 
 Make sure you have installed:
 
-- Node.js v18+  
-- npm or yarn  
-- MongoDB (Atlas or local)
+- Node.js
+- npm
+- MongoDB
 
 ---
 
