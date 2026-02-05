@@ -29,7 +29,7 @@ Make sure you have installed:
 
 ---
 
-### 1. Clone the repository
+# 1. Clone the repository
 
 git clone https://github.com/HiteshCodesl/Auth-JWT.git  
 
@@ -41,7 +41,7 @@ cd auth-jwt
   
 npm install    
 
-### env variables
+# env variables
 
 ### MongoDB URL
 MONGODB_URL= 
