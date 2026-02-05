@@ -29,10 +29,10 @@ Make sure you have installed:
 
 ---
 
-# 1. Initlize a Git   
+### 1. Initlize a Git   
 git init    
 
-# 2. Clone the repository
+### 2. Clone the repository
 
 git clone https://github.com/HiteshCodesl/Auth-JWT.git  
 
