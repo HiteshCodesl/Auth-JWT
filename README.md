@@ -29,15 +29,18 @@ Make sure you have installed:
 
 ---
 
-# 1. Clone the repository
+# 1. Initlize a Git   
+git init    
+
+# 2. Clone the repository
 
 git clone https://github.com/HiteshCodesl/Auth-JWT.git  
 
-### 2. Change Dirctory    
+### 3. Change Dirctory    
   
 cd auth-jwt   
 
-### 3. Install Dependencies 
+### 4. Install Dependencies 
   
 npm install    
 
