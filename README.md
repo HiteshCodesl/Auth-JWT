@@ -34,9 +34,11 @@ Make sure you have installed:
 git clone https://github.com/HiteshCodesl/Auth-JWT.git  
 
 ### 2. Change Dirctory    
+  
 cd auth   
 
-### 3. Install Dependencies   
+### 3. Install Dependencies 
+  
 npm install    
 
 ### env variables
