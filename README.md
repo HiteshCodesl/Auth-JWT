@@ -32,8 +32,7 @@ Make sure you have installed:
 ### 1. Clone the repository
 
 git clone https://github.com/HiteshCodesl/Auth-JWT.git                         
-cd auth      
-  
+cd auth   
 npm install    
 
 ### env variables
