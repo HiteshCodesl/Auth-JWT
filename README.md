@@ -31,19 +31,23 @@ Make sure you have installed:
 
 ### 1. Clone the repository
 
-git clone https://github.com/HiteshCodesl/Auth-JWT.git                         
+git clone https://github.com/HiteshCodesl/Auth-JWT.git  
+
+### 2. Change Dirctory    
 cd auth   
+
+### 3. Install Dependencies   
 npm install    
 
 ### env variables
 
-# MongoDB URL
+### MongoDB URL
 MONGODB_URL= 
 
-# JWT secret key
+### JWT secret key
 JWT_SECRET=
 
-# Backend URL for frontend requests
+### Backend URL for frontend requests
 NEXT_PUBLIC_BACKEND_URL= 
 
 
