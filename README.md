@@ -35,7 +35,7 @@ git clone https://github.com/HiteshCodesl/Auth-JWT.git
 
 ### 2. Change Dirctory    
   
-cd auth   
+cd auth-jwt
 
 ### 3. Install Dependencies 
   

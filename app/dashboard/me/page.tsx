@@ -15,6 +15,7 @@ export default function Page() {
   const [userDetails, setUserDetails] = useState<User | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
+   
   const getUserDetails = async (token: string | null) => {
     if (!token) return;
 
@@ -33,6 +34,12 @@ export default function Page() {
       console.error(error.response?.data || error.message);
     }
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    getUserDetails(token);
+  }, [isOpen])
+
 
   useEffect(() => {
     const token = localStorage.getItem("token");
