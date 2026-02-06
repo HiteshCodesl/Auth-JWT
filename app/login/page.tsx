@@ -15,6 +15,7 @@ import { useState } from "react"
 import axios from "axios"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
+import { LoaderCircle } from "lucide-react"
 
 
 type loginResponse = {
@@ -30,10 +31,11 @@ export default function Page() {
     const router =  useRouter();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const loginRequest = async() => {
         try{
-
+        setLoading(true);
         const response =  await axios.post<loginResponse>(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/auth/login`, {email, password});
         
         if(response.status === 201){
@@ -49,6 +51,8 @@ export default function Page() {
         }
         }catch{
             toast.error("login Failed")
+        }finally{
+            setLoading(false);
         }
     }
 
@@ -96,7 +100,8 @@ export default function Page() {
                 </CardContent>
                 <CardFooter className="flex-col gap-2">
                     <Button onClick={loginRequest} type="submit" className="w-full">
-                        Login
+                         Login
+                        {loading && <LoaderCircle className="h-4 w-4 animate-spin" />}
                     </Button>
                     <a
                         href="/signup"
